@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="submit_form.php" method="POST">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+            <fieldset>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+            </fieldset><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select course</option>
+                <option value="frontend">Front-End</option>
+                <option value="backend">Back-End</option>
+                <option value="pm">Project Management</option>
+                <option value="qa">QA Manual</option>
+            </select><br><br>
+
+            <label for="address">Full Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy">I agree to the privacy policy</label><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
